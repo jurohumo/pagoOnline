@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.modal3007 {
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.modal3007__dialog {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal3007__content {
+    background: rgba(255, 255, 255, .9);
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+}
+
+.modal3007__header {
+    background: red;
+    color: rgba(255, 255, 255, .8);
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.modal3007__title {
+    margin: 0;
+    font: 24px Montserrat;
+}
+
+.modal3007_close {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal3007__body {
+    text-align: center;
+}
+
+.modal3007__btn {
+    font: 15px Montserrat;
+    display: inline-block;
+    margin: 2rem 2rem;
+    padding: 1rem 2rem;
+    background: red;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);
+}
+
+.modal3007__trigger {
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #f93434;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 50px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.modal3007:target {
+    display: table;
+}
+
+</style>
+
+    <title>Pagon online</title>
+</head>
+
+<body>
+    <a href="#modal3007" class="modal3007__trigger">Trigger Modal</a>
+    <div id="modal3007" class="modal3007">
+        <div class="modal3007__dialog">
+            <section class="modal3007__content">
+                <header class="modal3007__header">
+                    <p class="modal3007__title">¿En qué moneda sera su pago?</p>
+                    <a href="#" class="modal3007_close">&times;</a>
+                </header>
+                <div class="modal3007__body">
+                    <a href="" class="modal3007__btn">S/ PAGO EN SOLES</a>
+                    <a href="" class="modal3007__btn">US$ PAGO EN DOLARES</a>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</body>
+
+</html>
